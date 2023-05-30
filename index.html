@@ -6,16 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Automobiles</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <video width="100%" height="auto" muted autoplay loop >
+    <header class="index">
+        <img src="logo1.png" class="logo">
+    </header>
+    
+    <video width="100%" height="auto" muted autoplay loop>
         <source src="bgvideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video> 
     
-    <audio src="acceleration-1-6916.mp3" muted autoplay></audio>
-    
+    <audio src="audio-engine.mp3" autoplay></audio>
+
     <div class="navigation">
         <button class="hamburger" onclick="show()">
             <div id="bar1" class="bar"></div>
@@ -25,14 +34,93 @@
 
         <nav>
             <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">Umbra</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="customise.html">Customise</a></li>
+                <li><a href="finder.html">Find Us</a></li>
             </ul>
         </nav>
     </div>
 
-    <script src="java.js"></script>
+    <button class="top" onclick="sct()">↑</button>
+
+    <div class="first" >
+        <h2 id="next">Welcome to The World of <br>Ares</h2>
+        <p>Pushing the limits of the possible is what drives us. To create the very best supercars and Grand Tourers needs a purely single-minded focus. A willingness to rewrite the rules. To push the boundaries ever further. Ares is defined by extraordinary design and engineering. And by a wholehearted commitment to the most engaging driver experience… with all the spine-tingling, pulse-racing thrills that go with it. <br><br>No half measures. No compromises.        
+        <br><br>The world of Ares is waiting…</p>
+        <button class="info"></button>
+    </div>
+
+    <div class="second">
+        <video src="v12.mp4" width="100%" muted autoplay loop></video>
+        <h3>DISCOVER THE FULL FORCE OF ARES</h3>
+        <h1>UMBRA</h1>
+        <a href="models.html"><input type="button" name="discover" value="DISCOVER"></a>
+    </div>
+
+    <div class="third">
+        <h2>BOOK A TEST DRIVE</h2>
+    </div>
+
+    <form class="form">
+        <label for="title">Title</label>
+        <label for="fname">First Name *</label>
+
+        <select id="title">
+            <option value="select">Please select...</option>
+            <option value="mr">Mr</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+        </select>
+
+        <input type="text" id="fname" required>
+
+        <label for="lname">Last Name *</label>
+        <label for="pno">Phone Number *</label>
+
+        <input type="text" id="lname" required>
+        
+        <input type="text" id="pno" placeholder="Example: 0501234567" required>
+
+        <label for="em">Email Address *</label>
+        <label for="exp">Preferred Experience</label>
+
+        <input type="email" id="em" required>
+        
+        <select id="exp">
+            <option value="select">Please select...</option>
+            <option value="sand">Sand</option>
+            <option value="track">Track</option>
+            <option value="highway">Highway</option>
+        </select>
+
+        <label for="md">Preferred Model</label><br>
+        <select id="md">
+            <option value="select">Please select...</option>
+            <option value="sand">Umbra</option>
+        </select><br>
+
+        <input type="submit" >
+    </form>
+
+    <footer>
+        <h3>ARES AUTOMOBILES</h3>
+        <hr>
+        <ul>
+            <li><a href="#">PRE-OWNED</a></li>
+            <li><a href="#">COOKIES</a></li>
+            <li><a href="#">LEGAL</a></li>
+            <li><a href="#">COMPLAINTS</a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">DEALERS</a></li>
+            <li><a href="#">SITE MAP</a></li>
+            <li><a href="#">PRIVACY</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </footer>
+
+    <script src="javas.js"></script>
 </body>
 </html>

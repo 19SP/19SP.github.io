@@ -1,15 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
-    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
-a,button{
+a,button, input{
     cursor: pointer;
 }
 
+.top{
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 1;
+    border-radius: 100%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    width: auto;
+}
+
+/*hamburger menu */
 nav{
     position: absolute;
     top: 100px;
@@ -24,16 +37,16 @@ nav{
     height: 100%;
     background-color: black;
     transition: .5s;
+    z-index: 1;
 }
 
 .navigation ul li{
-    color: #fff;
+    color: white;
     text-align: right;
     text-transform: uppercase;
     list-style-type: none;
     font-size: 1.5em;
     padding: 20px 30px;
-    border-bottom: 1pt solid #252525;
 }
 
 .hamburger, .bar{
@@ -42,10 +55,10 @@ nav{
 
 .hamburger{
     display: block;
-    top: 5%;
-    right: 95%;
-    width: 30px;
-    height: 30px;
+    top: 55px;
+    right: 93%;
+    width: 40px;
+    height: 40px;
     transform: translateY(-50%);
     border: 0;
     background: 0 0;
@@ -72,7 +85,7 @@ nav{
 }
 
 .hamburger.open #bar1{
-    background-color: #fff;
+    background-color: white;
     transform: rotate(45deg) translate(6px, 5px);
 }
 
@@ -81,15 +94,11 @@ nav{
 }
 
 .hamburger.open #bar3{
-    background-color: #fff;
+    background-color: white;
     transform: rotate(-45deg) translate(6px, -5px);
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
-a:link{
+a:link, a:visited{
     text-decoration: none;
     color: white;
 }
@@ -97,6 +106,421 @@ a:link{
 video{
     float: left;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    padding-bottom: 100px;
 }
+
+header{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.logo{
+    width:150px;
+    background: none;
+    padding-top: 10px;
+}
+
+.first, .third, footer{
+    text-align: center;
+    padding: 100px;
+}
+
+.first{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.first h2, .text h1{
+    font-family: 'Gruppo', sans-serif;
+    float: left;
+    margin-right: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size:36px;
+    line-height: 100%;
+}
+
+.first p, .text p{
+    margin-left: 550px; 
+    line-height: 28px;
+    text-align: justify;
+}
+
+.second{
+    position: relative;
+    text-align: center;
+    color: white; 
+    margin-bottom: 100px;
+}
+
+.second h3{
+    font-size: 36px;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.second h1{
+    font-size: 90px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gruppo', sans-serif;
+}
+
+.second input{
+    padding: 10px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 20px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    margin-top: 27%;
+}
+
+input[name="discover"]:hover{
+    background-color: white;
+    color: black;
+}
+
+.third h2{
+    font-family: 'Gruppo', sans-serif;
+    text-align: left;
+    font-size: 36px;
+    float: left;
+}
+
+.form{
+    margin-left: 40%;
+    background-color: black;
+    color: white;
+    padding: 3%;
+    width: 47%;
+    margin-top: 40%;
+    margin-bottom:100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 17px 3%;
+}
+
+.form input, .form select{
+    padding: 3%;
+    background: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.form select option{
+    color: black;
+}
+
+.form input[type='submit']{
+    background-color: white;
+    color: black;
+    transform: translate(50%, 50%);
+    margin-bottom: 10px;
+}
+
+footer{
+    padding: 30px;
+    padding-bottom: 45px;
+    position: relative;
+}
+
+footer h3{
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding: 23px;
+    font-size: 20px;
+    float: left;
+    width: 15%;
+}
+
+footer ul li a{
+    font-family: 'Gruppo', sans-serif;
+}
+
+footer:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.text{
+    background-color: black;
+    color: white;
+}
+
+.text h1{
+    padding-right: 0;
+    padding-left: 100px;
+    font-size: 75px;
+}
+
+.text p{
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 630px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -40px;
+}
+
+.bg2{
+    filter: brightness(85%);
+}
+
+
+.container {
+    position: relative;
+}
+
+.km, .s, .km-h, .hp{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 70px;
+}
+
+.km{
+    bottom: 60px;
+    right: 70%;
+}
+
+.s{
+    bottom: 60px;
+    right: 58%;
+}
+
+.km-h{
+    bottom: 60px;
+    right: 34%;
+}
+
+.hp{
+    bottom: 60px;
+    left: 70%;
+}
+
+.skm, .ss, .skm-h, .shp{
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size: 20px;
+}
+
+.skm{
+    bottom: 129px;
+    right: 70%;
+}
+
+.ss{
+    bottom: 129px;
+    right: 58%;
+}
+
+.skm-h{
+    bottom: 129px;
+    right: 34%;
+}
+
+.shp{
+    bottom: 129px;
+    right: 14%;
+}
+
+.container img{
+    filter: brightness(80%);
+}
+
+.inside{
+    text-align: center;
+    padding: 100px;
+}
+
+.inside video{
+    padding-bottom: 50px;
+    border-radius: 5px;
+    width: 80%;
+    float: none;
+    
+}
+
+.inside h3, .inside p{
+    text-align: left;
+    padding-left: 30%;
+    padding-bottom: 10px;
+}
+
+.inside h3, .side-text h3, .side-text1 h3, .side-text2 h3, .services-menu1 h3, .services-menu2 h3{
+    font-family: 'Gruppo', sans-serif;
+    font-size: 35px;
+}
+
+.last-info h1{
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+    font-size:50px;
+    position: relative;
+}
+
+.side-text1, .side-text2, .services-menu1, .services-menu2{
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+
+.side-text1 img, .services-menu1 img{
+    float: left;
+    margin-right: 90px;
+    border-radius: 10px;
+}
+
+.side-text1 h3, .side-text2 h3, .services-menu1 h3, .services-menu2 h3{
+    padding-top: 120px;
+    padding-bottom: 10px;
+}
+
+.side-text2 img, .services-menu2 img{
+    padding-left: 90px;
+    border-radius: 10px;
+}
+
+.side-text2 p, .side-text2 p{
+    padding-bottom: 140px;
+}
+
+.last-info img{
+    float: left;
+    padding-bottom: 20px;
+}
+
+.last-info h1{
+    padding-top: 90px;
+}
+
+.last-info input{
+    padding: 10px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 130px;
+}
+
+input[name="order-now"]:hover{
+    background-color: black;
+    color: white;
+}
+
+.servicesimg{
+    width: 100%;
+    height: 550px;
+    filter: brightness(70%);
+}
+
+.services-menu2 h3, .services-menu1 h3{
+    margin-bottom: 100px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+.services-menu1 img, .services-menu2 img{
+    border-radius: 5px;
+}
+
+.warranty img{
+    filter: brightness(80%);
+}
+
+.warranty{
+    position: relative;
+}
+
+.warranty h1{
+    position: absolute;
+    top: 10%;
+    left: 12%;
+    color: white;
+    font-family: 'Gruppo', sans-serif;
+    font-size:50px;
+}
+
+.warranty a{
+    position: absolute;
+    top: 23%;
+    left: 12%;
+    color: white;
+}
+
+.first a{
+    color: black;
+}
+
+.locate{
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search{
+    width: 25px;
+    padding-top: 1px;
+    padding-left: 12px;
+    padding-right: 10px;
+    float: left;
+}
+
+.first p input{
+    background: none;
+    border: none;
+}
+
+.map{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.map iframe{
+    width: 85%;
+    border-radius: 10px;
+}
+
+
+
+
+

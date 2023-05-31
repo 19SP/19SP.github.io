@@ -15,21 +15,25 @@
 <body>
 
     <header class="index">
-        <img src="logo1.png" class="logo">
+        <img src="logo1.png" class="logo"> 
+        <!--The header tag contains the logo -->
     </header>
     
     <video width="100%" height="auto" muted autoplay loop>
         <source src="bgvideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video> 
+    </video>  
+    <!--The video is used as the background, it is muted, on autoplay and on loop-->
     
-    <audio src="audio-engine.mp3" autoplay></audio>
+    <audio src="audio-engine.mp3" autoplay></audio> 
+    <!--The audio starts playing as soon as the page loads-->
 
     <div class="navigation">
         <button class="hamburger" onclick="show()">
             <div id="bar1" class="bar"></div>
             <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
+            <div id="bar3" class="bar"></div> 
+            <!--The bars are for the menu button-->
         </button>
 
         <nav>
@@ -38,12 +42,14 @@
                 <li><a href="models.html">Umbra</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="customise.html">Customise</a></li>
-                <li><a href="finder.html">Find Us</a></li>
+                <li><a href="finder.html">Find Us</a></li> 
+                <!--The navigations menu contains 5 pages inside anchor tag to link the html pages-->
             </ul>
         </nav>
     </div>
 
     <button class="top" onclick="sct()">↑</button>
+    <!--The function sct() in Java Script file unables the user to scroll to the top of the page-->
 
     <div class="first" >
         <h2 id="next">Welcome to The World of <br>Ares</h2>
@@ -58,6 +64,7 @@
         <h1>UMBRA</h1>
         <audio id="myaudio" src="click.mp3"></audio>
         <a href="models.html"  ><input type="button" name="discover" value="DISCOVER" onmouseover="document.getElementById('myaudio').play()"></a>
+        <!--When the cursor hovers over the button the audio the played using play()-->
     </div>
 
     <div class="third">
@@ -73,9 +80,11 @@
             <option value="mr">Mr</option>
             <option value="ms">Ms</option>
             <option value="mrs">Mrs</option>
+            <option value="mrs">Prefer not to mention</option>
         </select>
 
         <input type="text" id="fname" required>
+        <!--Using required to make the field necessary in the form-->
 
         <label for="lname">Last Name *</label>
         <label for="pno">Phone Number *</label>
@@ -99,7 +108,7 @@
         <label for="md">Preferred Model</label><br>
         <select id="md">
             <option value="select">Please select...</option>
-            <option value="sand">Umbra</option>
+            <option value="umbra">Umbra</option>
         </select><br>
 
         <audio id="myaudio" src="click.mp3"></audio>
@@ -120,6 +129,7 @@
             <li><a href="#">SITE MAP</a></li>
             <li><a href="#">PRIVACY</a></li>
             <li><a href="#">FAQs</a></li>
+            <!--The footer links are in a list inside the anchor tag to link them to other pages-->
         </ul>
     </footer>
 

@@ -13,7 +13,8 @@ a,button, input{
     position: fixed;
     top: 80%;
     left: 90%;
-    z-index: 1;
+    z-index: 1; 
+    /*z-index helps position the element along the z axis, in this case the element is on the very top*/
     border-radius: 100%;
     padding: 1%;
     background-color: black;
@@ -59,16 +60,17 @@ nav{
     right: 93%;
     width: 40px;
     height: 40px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
+    /*This enables to position the element along the y axis*/
     border: 0;
     background: 0 0;
 }
 
 .bar{
     top: 3px;
-    background: white;
+    background: rgb(195, 195, 195);
     width: 100%;
-    height: 4px;
+    height: 2px; /*The thickness of menu bar lines*/
     transition: all .3s ease-in;
 }
 
@@ -85,8 +87,8 @@ nav{
 }
 
 .hamburger.open #bar1{
-    background-color: white;
-    transform: rotate(45deg) translate(6px, 5px);
+    background-color: rgb(195, 195, 195);
+    transform: rotate(45deg) translate(6px, 5px); 
 }
 
 .hamburger.open #bar2{
@@ -94,9 +96,10 @@ nav{
 }
 
 .hamburger.open #bar3{
-    background-color: white;
+    background-color: rgb(195, 195, 195);
     transform: rotate(-45deg) translate(6px, -5px);
 }
+/*The bar1 and bar3 rotate to 45 degrees to create a cross symbol and bar2 becomes invisible*/
 
 a:link, a:visited{
     text-decoration: none;
@@ -215,9 +218,10 @@ input[name="discover"]:hover{
     margin-bottom:100px;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 17px 3%;
+    gap: 17px 3%; /*row-gap, column-gap*/
     border: 1px solid rgb(78, 78, 78);
 }
+/*The form inputs/selections are displayed in the form of a grid*/
 
 .form input, .form select{
     padding: 3%;
@@ -264,9 +268,9 @@ footer ul li a{
 }
 
 footer:after{
-    clear: both;
+    clear: both; /*Since float is used before clear, the element is pushed below both left and right*/
     content: "";
-    display: table;
+    display: table; /*The footer elements are dislayed like table*/
 }
 
 .text{
@@ -298,7 +302,6 @@ footer:after{
 .bg2{
     filter: brightness(85%);
 }
-
 
 .container {
     position: relative;
@@ -374,7 +377,6 @@ footer:after{
     border-radius: 5px;
     width: 80%;
     float: none;
-    
 }
 
 .inside h3, .inside p{
@@ -550,8 +552,3 @@ input[name="order-now"]:hover, input[type='submit']:hover{
     font-size:36px;
     line-height: 100%;
 }
-
-
-
-
-

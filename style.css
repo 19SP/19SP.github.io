@@ -207,8 +207,8 @@ input[name="discover"]:hover{
 
 .form{
     margin-left: 40%;
-    background-color: black;
-    color: white;
+    background: none;
+    color: black;
     padding: 3%;
     width: 47%;
     margin-top: 40%;
@@ -216,12 +216,13 @@ input[name="discover"]:hover{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 17px 3%;
+    border: 1px solid rgb(78, 78, 78);
 }
 
 .form input, .form select{
     padding: 3%;
     background: none;
-    color: white;
+    color: black;
     border-radius: 5px;
 }
 
@@ -441,7 +442,7 @@ footer:after{
     margin-bottom: 130px;
 }
 
-input[name="order-now"]:hover{
+input[name="order-now"]:hover, input[type='submit']:hover{
     background-color: black;
     color: white;
 }
@@ -518,6 +519,36 @@ input[name="order-now"]:hover{
 .map iframe{
     width: 85%;
     border-radius: 10px;
+}
+
+.soundtrack{
+    padding: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.soundtrack img{
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.soundtrack button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -45%);
+}
+
+.soundtrack h2{
+    font-family: 'Gruppo', sans-serif;
+    margin-right: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:36px;
+    line-height: 100%;
 }
 
 

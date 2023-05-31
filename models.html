@@ -23,6 +23,8 @@
         Your browser does not support the video tag.
     </video> 
 
+    <audio src="atmosphere.mp3" autoplay></audio>
+
     <div class="navigation">
         <button class="hamburger" onclick="show()">
             <div id="bar1" class="bar"></div>
@@ -47,6 +49,13 @@
         <h1>ARES UMBRA</h1>
         <p>Intuitive, perceptive, and sharp, Umbra is the most intelligent Ares has ever envisioned. With 141,200 sender-receiver functions, 7 kilometres of cabling, and over 25,000 sub-functions, it has a brain of its own able to process complex data and exchange detailed information with unparalleled ease.<br><br>
            Umbra offers over ten driver assistance systems — each a manifestation of this advanced intelligence — that accommodates your drive for a smooth and safe journey</p>
+    </div>
+
+    <div class="soundtrack">
+        <h2>Play to hear the Umbra engine</h2>
+        <img src="audio freq.png" width="40%">
+        <audio src="engine.mp3" id="play"></audio>    
+        <button onclick="document.getElementById('play').play()"> <img src="play.png" width="15%"> </button>
     </div>
 
     <div class="container">
@@ -82,7 +91,8 @@
     <div class="last-info">
         <img src="img7.png" width="60%" height="auto">
         <h1>UMBRA<br>A PROPHECY FULFILLED</h1> 
-        <input type="button" name="order-now" value="Order Now">
+        <audio id="myaudio" src="click.mp3"></audio>
+        <input type="button" name="order-now" value="Order Now" onmouseover="document.getElementById('myaudio').play()">
     </div>
 
     <footer>
